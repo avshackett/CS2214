@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dlxsimulationgui.DLXControlViewController">
+   <children>
+      <Text layoutX="10.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Control Signals" underline="true" />
+      <Text fx:id="csS2op" layoutX="10.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S2op" />
+      <Text fx:id="csZflag" layoutX="10.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zflag" />
+      <Text fx:id="csALUop" layoutX="10.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALUop" />
+      <Text fx:id="csCload" layoutX="10.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cload" />
+      <Text fx:id="csREGload" layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGload" />
+      <Text fx:id="csAload" layoutX="10.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aload" />
+      <Text fx:id="csAoe" layoutX="10.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aoe" />
+      <Text fx:id="csBload" layoutX="10.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bload" />
+      <Text fx:id="csBoe" layoutX="10.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Boe" />
+      <Text fx:id="csREGselect" layoutX="10.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGselect" />
+      <Text fx:id="csIRload" layoutX="10.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IRload" />
+      <Text fx:id="csIRoeS1" layoutX="10.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IRoeS1" />
+      <Text fx:id="csIRoeS2" layoutX="10.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IRoeS2" />
+      <Text fx:id="csopcode" layoutX="10.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="opcode" />
+      <Text fx:id="csopcodeALU" layoutX="10.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="opcodeALU" />
+      <Text fx:id="csReset" layoutX="10.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reset" />
+      <Text fx:id="csPCload" layoutX="10.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PCload" />
+      <Text fx:id="csPCoeS1" layoutX="10.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PCoeS1" />
+      <Text fx:id="csPCMARselect" layoutX="10.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PCMARselect" />
+      <Text fx:id="csMARload" layoutX="10.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MARload" />
+      <Text fx:id="csMemRead" layoutX="10.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MemRead" />
+      <Text fx:id="csMDRload" layoutX="10.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MDRload" />
+      <Text fx:id="csMDRoeS2" layoutX="10.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MDRoeS2" />
+      <Text fx:id="csMemWrite" layoutX="10.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MemWrite" />
+      <Text fx:id="csMemOP" layoutX="10.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MemOP" />
+      <Text fx:id="csMemWait" layoutX="10.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MemWait" />
+      <Text fx:id="R0" layoutX="150.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R0" />
+      <Text fx:id="R1" layoutX="150.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R1" />
+      <Text fx:id="R2" layoutX="150.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R2" />
+      <Text fx:id="R3" layoutX="150.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R3" />
+      <Text fx:id="R4" layoutX="150.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R4" />
+      <Text fx:id="R5" layoutX="150.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R5" />
+      <Text fx:id="R6" layoutX="150.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R6" />
+      <Text fx:id="R7" layoutX="150.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R7" />
+      <Text fx:id="R8" layoutX="150.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R8" />
+      <Text fx:id="R9" layoutX="150.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R9" />
+      <Text fx:id="R10" layoutX="150.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R10" />
+      <Text fx:id="R11" layoutX="150.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R11" />
+      <Text fx:id="R12" layoutX="150.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R12" />
+      <Text fx:id="R13" layoutX="150.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R13" />
+      <Text fx:id="R14" layoutX="150.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R14" />
+      <Text fx:id="R15" layoutX="150.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R15" />
+      <Text fx:id="R16" layoutX="150.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R16" />
+      <Text fx:id="R17" layoutX="150.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R17" />
+      <Text fx:id="R18" layoutX="150.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R18" />
+      <Text fx:id="R19" layoutX="150.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R19" />
+      <Text fx:id="R20" layoutX="150.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R20" />
+      <Text fx:id="R21" layoutX="150.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R21" />
+      <Text fx:id="R22" layoutX="150.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R22" />
+      <Text fx:id="R23" layoutX="150.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R23" />
+      <Text fx:id="R24" layoutX="150.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R24" />
+      <Text fx:id="R25" layoutX="150.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R25" />
+      <Text fx:id="R26" layoutX="150.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R26" />
+      <Text fx:id="R27" layoutX="150.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R27" />
+      <Text fx:id="R28" layoutX="150.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R28" />
+      <Text fx:id="R29" layoutX="150.0" layoutY="620.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R29" />
+      <Text fx:id="R30" layoutX="150.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R30" />
+      <Text fx:id="R31" layoutX="150.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R31" />
+      <Text fx:id="IR" layoutX="300.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IR" />
+      <Text fx:id="PC" layoutX="300.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PC" />
+      <Text fx:id="MAR" layoutX="300.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAR" />
+      <Text fx:id="MDR" layoutX="300.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MDR" />
+      <Text fx:id="A" layoutX="300.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" />
+      <Text fx:id="B" layoutX="300.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+      <Text fx:id="C" layoutX="300.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+      <Text layoutX="150.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register File" underline="true" />
+      <Text layoutX="300.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hardware Registers" underline="true" />
+      <Text layoutX="300.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory Registers" underline="true" />
+      <Text layoutX="300.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register Buffers" underline="true" />
+      <TextField fx:id="tfR2" editable="false" layoutX="188.0" layoutY="66.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR3" editable="false" layoutX="188.0" layoutY="86.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR31" editable="false" layoutX="188.0" layoutY="646.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR30" editable="false" layoutX="188.0" layoutY="626.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR29" editable="false" layoutX="188.0" layoutY="606.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR28" editable="false" layoutX="188.0" layoutY="586.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR27" editable="false" layoutX="188.0" layoutY="566.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR26" editable="false" layoutX="188.0" layoutY="546.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR25" editable="false" layoutX="188.0" layoutY="526.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR24" editable="false" layoutX="188.0" layoutY="506.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR23" editable="false" layoutX="188.0" layoutY="486.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR22" editable="false" layoutX="188.0" layoutY="466.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR21" editable="false" layoutX="188.0" layoutY="446.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR20" editable="false" layoutX="188.0" layoutY="426.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR19" editable="false" layoutX="188.0" layoutY="406.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR18" editable="false" layoutX="188.0" layoutY="386.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR17" editable="false" layoutX="188.0" layoutY="366.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR16" editable="false" layoutX="188.0" layoutY="346.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR15" editable="false" layoutX="188.0" layoutY="326.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR14" editable="false" layoutX="188.0" layoutY="306.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR13" editable="false" layoutX="188.0" layoutY="286.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR12" editable="false" layoutX="188.0" layoutY="266.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR11" editable="false" layoutX="188.0" layoutY="246.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR10" editable="false" layoutX="188.0" layoutY="226.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR9" editable="false" layoutX="188.0" layoutY="206.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR8" editable="false" layoutX="188.0" layoutY="186.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR7" editable="false" layoutX="188.0" layoutY="166.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR6" editable="false" layoutX="188.0" layoutY="146.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR5" editable="false" layoutX="188.0" layoutY="126.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR4" editable="false" layoutX="188.0" layoutY="106.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR1" editable="false" layoutX="188.0" layoutY="46.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfR0" editable="false" layoutX="188.0" layoutY="26.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfIR" editable="false" layoutX="335.0" layoutY="26.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfPC" editable="false" layoutX="335.0" layoutY="46.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfMAR" editable="false" layoutX="335.0" layoutY="86.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfMDR" editable="false" layoutX="335.0" layoutY="106.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfA" editable="false" layoutX="335.0" layoutY="146.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfB" editable="false" layoutX="335.0" layoutY="166.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfC" editable="false" layoutX="335.0" layoutY="186.0" minHeight="20.0" prefHeight="20.0" prefWidth="100.0" />
+      <TextField fx:id="tfPCMARselect" editable="false" layoutX="95.0" layoutY="386.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfS2op" editable="false" layoutX="95.0" layoutY="26.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfZflag" editable="false" layoutX="95.0" layoutY="46.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfALUop" editable="false" layoutX="95.0" layoutY="66.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfCload" editable="false" layoutX="95.0" layoutY="86.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfREGload" editable="false" layoutX="95.0" layoutY="106.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfAload" editable="false" layoutX="95.0" layoutY="126.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfAoe" editable="false" layoutX="95.0" layoutY="146.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfBload" editable="false" layoutX="95.0" layoutY="166.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfBoe" editable="false" layoutX="95.0" layoutY="186.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfREGselect" editable="false" layoutX="95.0" layoutY="206.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfIRload" editable="false" layoutX="95.0" layoutY="226.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfIRoeS1" editable="false" layoutX="95.0" layoutY="246.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfIRoeS2" editable="false" layoutX="95.0" layoutY="266.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfopcode" editable="false" layoutX="95.0" layoutY="286.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfopcodeALU" editable="false" layoutX="95.0" layoutY="306.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfReset" editable="false" layoutX="95.0" layoutY="326.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfPCload" editable="false" layoutX="95.0" layoutY="346.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfPCoeS1" editable="false" layoutX="95.0" layoutY="366.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMARload" editable="false" layoutX="95.0" layoutY="406.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMemRead" editable="false" layoutX="95.0" layoutY="426.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMDRload" editable="false" layoutX="95.0" layoutY="446.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMDRoeS2" editable="false" layoutX="95.0" layoutY="466.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMemWrite" editable="false" layoutX="95.0" layoutY="486.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMemOP" editable="false" layoutX="95.0" layoutY="506.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+      <TextField fx:id="tfMemWait" editable="false" layoutX="95.0" layoutY="526.0" minHeight="20.0" prefHeight="20.0" prefWidth="50.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="aP" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dlxsimulationgui.DLXView">
+         <children>
+            <Rectangle fx:id="RegFile" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="100.0" layoutX="350.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="100.0" />
+            <Rectangle fx:id="Mem" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="100.0" layoutX="325.0" layoutY="585.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" />
+            <Rectangle fx:id="IR" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="325.0" layoutY="265.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" />
+            <Rectangle fx:id="PC" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="325.0" layoutY="345.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" />
+            <Rectangle fx:id="MAR" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="325.0" layoutY="425.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" />
+            <Rectangle fx:id="MDR" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="325.0" layoutY="505.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="125.0" />
+            <Rectangle fx:id="AMux" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="290.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="BMux" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="290.0" layoutY="165.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="DMX" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="480.0" layoutY="135.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="B" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="230.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="A" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="230.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="C" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="30.0" layoutX="550.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="PCMARMux" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="500.0" layoutY="380.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Rectangle fx:id="MDRMux" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="500.0" layoutY="500.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Line endX="30.0" layoutX="320.0" layoutY="125.0" />
+            <Line endX="30.0" layoutX="320.0" layoutY="185.0" />
+            <Line endX="30.0" layoutX="260.0" layoutY="125.0" />
+            <Line endX="30.0" layoutX="260.0" layoutY="185.0" />
+            <Line endX="30.0" layoutX="450.0" layoutY="155.0" />
+            <Line endX="40.0" layoutX="510.0" layoutY="155.0" />
+            <Line endX="40.0" layoutX="580.0" layoutY="155.0" />
+            <Line endY="520.0" layoutX="620.0" layoutY="20.0" />
+            <Line endX="50.0" layoutX="450.0" layoutY="515.0" />
+            <Line endX="30.0" layoutX="450.0" layoutY="435.0" />
+            <Line endX="30.0" layoutX="450.0" layoutY="365.0" />
+            <Line endX="20.0" layoutX="480.0" layoutY="410.0" />
+            <Line endX="20.0" layoutX="480.0" layoutY="390.0" />
+            <Line endY="25.0" layoutX="480.0" layoutY="365.0" />
+            <Line endY="25.0" layoutX="480.0" layoutY="410.0" />
+            <Line endY="460.0" layoutX="650.0" layoutY="225.0" />
+            <Line endY="440.0" layoutX="680.0" layoutY="245.0" />
+            <Line endX="120.0" layoutX="530.0" layoutY="400.0" />
+            <Line endX="150.0" layoutX="530.0" layoutY="510.0" />
+            <Line endX="90.0" layoutX="530.0" layoutY="530.0" />
+            <Line endX="20.0" layoutX="450.0" layoutY="525.0" />
+            <Line endY="30.0" layoutX="470.0" layoutY="525.0" />
+            <Line endX="210.0" layoutX="470.0" layoutY="555.0" />
+            <Line endX="170.0" layoutX="450.0" layoutY="445.0" />
+            <Line endX="170.0" layoutX="450.0" layoutY="355.0" />
+            <Line endX="230.0" layoutX="450.0" layoutY="610.0" />
+            <Line endX="200.0" layoutX="450.0" layoutY="660.0" />
+            <Polygon fx:id="ALU" fill="GHOSTWHITE" layoutX="400.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0">
+              <points>
+                <Double fx:value="-20.0" />
+                <Double fx:value="10.0" />
+                
+                <Double fx:value="-20.0" />
+                <Double fx:value="20.0" />
+                
+                <Double fx:value="20.0" />
+                <Double fx:value="15.0" />
+                
+                <Double fx:value="20.0" />
+                <Double fx:value="-15.0" />
+                
+                <Double fx:value="-20.0" />
+                <Double fx:value="-20.0" />
+                
+                <Double fx:value="-20.0" />
+                <Double fx:value="-10.0" />
+                
+                <Double fx:value="-10.0" />
+                <Double fx:value="0.0" />
+                
+              </points>
+            </Polygon>
+            <Line endX="230.0" layoutX="450.0" layoutY="280.0" />
+            <Line endY="600.0" layoutX="180.0" layoutY="10.0" />
+            <Line endY="600.0" layoutX="150.0" layoutY="10.0" />
+            <Line endX="175.0" layoutX="150.0" layoutY="275.0" />
+            <Line endX="145.0" layoutX="180.0" layoutY="285.0" />
+            <Line endX="175.0" layoutX="150.0" layoutY="360.0" />
+            <Line endX="145.0" layoutX="180.0" layoutY="520.0" />
+            <Line endX="80.0" layoutX="150.0" layoutY="125.0" />
+            <Line endX="50.0" layoutX="180.0" layoutY="185.0" />
+            <Line endX="200.0" layoutX="180.0" layoutY="14.0" />
+            <Line endX="230.0" layoutX="150.0" layoutY="44.0" />
+            <Line endX="200.0" layoutX="420.0" layoutY="30.0" />
+            <Text layoutX="375.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reg File" />
+            <Text layoutX="240.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A" />
+            <Text layoutX="240.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B" />
+            <Text layoutX="392.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALU" />
+            <Text layoutX="560.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C" />
+            <Text layoutX="375.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IR" />
+            <Text layoutX="375.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PC" />
+            <Text layoutX="370.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAR" />
+            <Text layoutX="370.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MDR" />
+            <Text layoutX="360.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memory" />
+            <Text layoutX="300.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="300.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+            <Text layoutX="300.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Text layoutX="298.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Text layoutX="298.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+            <Text layoutX="298.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="508.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Text layoutX="508.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+            <Text layoutX="508.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="508.0" layoutY="533.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Text layoutX="508.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+            <Text layoutX="508.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="491.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Text layoutX="491.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="491.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D" />
+            <Rectangle fx:id="MUX" arcHeight="5.0" arcWidth="5.0" fill="GHOSTWHITE" height="40.0" layoutX="420.0" layoutY="215.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="30.0" />
+            <Line endX="30.0" layoutX="390.0" layoutY="235.0" />
+            <Line endX="50.0" layoutX="370.0" layoutY="245.0" />
+            <Line endX="30.0" layoutX="390.0" layoutY="225.0" />
+            <Line endY="30.0" layoutX="390.0" layoutY="235.0" />
+            <Line endY="20.0" layoutX="370.0" layoutY="245.0" />
+            <Line endX="45.0" layoutX="450.0" layoutY="235.0" />
+            <Text layoutX="606.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dest" />
+            <Text layoutX="636.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Addr" />
+            <Text layoutX="666.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+            <Text layoutX="131.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S1" />
+            <Text layoutX="160.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S2" />
+            <Text layoutX="428.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="M" />
+            <Text layoutX="428.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="U" />
+            <Text layoutX="428.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" />
+            <Line endY="60.0" layoutX="495.0" layoutY="175.0" />
+            <Line endX="5.0" endY="5.0" layoutX="320.0" layoutY="125.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="325.0" layoutY="120.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="325.0" layoutY="180.0" />
+            <Line endX="5.0" endY="5.0" layoutX="320.0" layoutY="185.0" />
+            <Line endX="5.0" endY="5.0" layoutX="260.0" layoutY="185.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="265.0" layoutY="180.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="265.0" layoutY="120.0" />
+            <Line endX="5.0" endY="5.0" layoutX="260.0" layoutY="125.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="155.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="150.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="515.0" layoutY="150.0" />
+            <Line endX="5.0" endY="5.0" layoutX="510.0" layoutY="155.0" />
+            <Line endX="5.0" endY="5.0" layoutX="580.0" layoutY="155.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="585.0" layoutY="150.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="275.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="280.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="355.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="350.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="440.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="445.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="515.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="510.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="605.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="610.0" />
+            <Line endX="5.0" endY="5.0" layoutX="450.0" layoutY="660.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="455.0" layoutY="655.0" />
+            <Line endX="5.0" endY="5.0" layoutX="180.0" layoutY="520.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="185.0" layoutY="515.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="155.0" layoutY="355.0" />
+            <Line endX="5.0" endY="5.0" layoutX="150.0" layoutY="360.0" />
+            <Line endX="5.0" endY="5.0" layoutX="180.0" layoutY="285.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="185.0" layoutY="280.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="155.0" layoutY="270.0" />
+            <Line endX="5.0" endY="5.0" layoutX="150.0" layoutY="275.0" />
+            <Line endX="5.0" endY="5.0" layoutX="180.0" layoutY="185.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="185.0" layoutY="180.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="155.0" layoutY="120.0" />
+            <Line endX="5.0" endY="5.0" layoutX="150.0" layoutY="125.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="380.0" layoutY="44.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="380.0" layoutY="44.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="380.0" layoutY="14.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="380.0" layoutY="14.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="620.0" layoutY="30.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="620.0" layoutY="30.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="650.0" layoutY="400.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="650.0" layoutY="400.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="680.0" layoutY="555.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="680.0" layoutY="555.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="680.0" layoutY="610.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="680.0" layoutY="610.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="500.0" layoutY="390.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="500.0" layoutY="390.0" />
+            <Line endX="-5.0" endY="-5.0" layoutX="500.0" layoutY="410.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="500.0" layoutY="410.0" />
+            <Line endX="5.0" endY="5.0" layoutX="530.0" layoutY="510.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="535.0" layoutY="505.0" />
+            <Line endX="-5.0" endY="5.0" layoutX="535.0" layoutY="525.0" />
+            <Line endX="5.0" endY="5.0" layoutX="530.0" layoutY="530.0" />
+            <Line endX="-2.5" endY="2.5" layoutX="680.0" layoutY="280.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="680.0" layoutY="280.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="620.0" layoutY="355.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="620.0" layoutY="355.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="620.0" layoutY="445.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="620.0" layoutY="445.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="680.0" layoutY="510.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="680.0" layoutY="510.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="620.0" layoutY="530.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="620.0" layoutY="530.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="650.0" layoutY="660.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="650.0" layoutY="660.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="620.0" layoutY="155.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="620.0" layoutY="155.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="150.0" layoutY="44.0" startX="2.5" startY="-2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="150.0" layoutY="44.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="-2.5" layoutX="180.0" layoutY="14.0" startX="2.5" startY="2.5" />
+            <Line endX="-2.5" endY="2.5" layoutX="180.0" layoutY="14.0" startX="2.5" startY="-2.5" />
+      <Button fx:id="add" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="addi" layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#addi" text="Addi" />
+      <Button fx:id="sub" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#sub" text="Sub" />
+      <Button fx:id="subi" layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#subi" text="Subi" />
+      <Button fx:id="loadw" layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#loadw" text="LoadW" />
+      <Button fx:id="storew" layoutX="10.0" layoutY="220.0" mnemonicParsing="false" onAction="#storew" text="StoreW" />
+      <Button fx:id="beqz" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#beqz" text="BEQZ" />
+      <Button fx:id="bnez" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" onAction="#bnez" text="BNEZ" />
+      <Button fx:id="jump" layoutX="10.0" layoutY="370.0" mnemonicParsing="false" onAction="#jump" text="Jump" />
+      <Button fx:id="or" layoutX="10.0" layoutY="400.0" mnemonicParsing="false" onAction="#or" text="Or" />
+      <Button fx:id="ori" layoutX="10.0" layoutY="430.0" mnemonicParsing="false" onAction="#ori" text="Ori" />
+      <Button fx:id="sll" layoutX="10.0" layoutY="460.0" mnemonicParsing="false" onAction="#sll" text="SLL" />
+      <Button fx:id="srl" layoutX="10.0" layoutY="490.0" mnemonicParsing="false" onAction="#srl" text="SRL" />
+      <Button fx:id="and" layoutX="10.0" layoutY="520.0" mnemonicParsing="false" onAction="#and" text="And" />
+      <Button fx:id="next" layoutX="715.0" layoutY="10.0" mnemonicParsing="false" text="Next Step" />
+      <Text layoutX="35.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Instruction" underline="true" />
+      <TextField fx:id="instrDisplay" editable="false" layoutX="10.0" layoutY="660.0" promptText="Enter Instruction Here" />
+      <Button fx:id="quit" layoutX="750.0" layoutY="660.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+      <Button fx:id="loadh" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#loadh" text="LoadH" />
+      <Button fx:id="loadb" layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onAction="#loadb" text="LoadB" />
+      <Button fx:id="storeh" layoutX="10.0" layoutY="250.0" mnemonicParsing="false" onAction="#storeh" text="StoreH" />
+      <Button fx:id="storeb" layoutX="10.0" layoutY="280.0" mnemonicParsing="false" onAction="#storeb" text="StoreB" />
+         </children>
+      </AnchorPane>
